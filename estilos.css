@@ -1,0 +1,367 @@
+
+:root {
+    --naranja: #f47721;
+    --naranja-oscuro: #d95b0b;
+    --amarillo: #ffd45a;
+    --crema: #fff8e9;
+    --texto: #30271f;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    background: #fffdf8;
+    color: var(--texto);
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 800;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.12;
+}
+
+h1 span, h2 span {
+    color: var(--naranja);
+}
+
+.navbar {
+    background: #fffdf8;
+    border-bottom: 1px solid #f0e4d3;
+    box-shadow: 0 4px 20px #6843190c;
+}
+
+.navbar-brand {
+    color: var(--naranja-oscuro);
+    font-size: 1.4rem;
+}
+
+.nav-link {
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: var(--naranja);
+}
+
+.btn-naranja {
+    background: var(--naranja);
+    color: white;
+    border: 1px solid var(--naranja);
+    border-radius: 13px;
+    padding: 10px 17px;
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+.btn-naranja:hover {
+    background: var(--naranja-oscuro);
+    border-color: var(--naranja-oscuro);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.portada {
+    padding: 80px 0;
+    background: radial-gradient(circle at 85% 15%, #ffedb3, transparent 30%),
+                linear-gradient(135deg, #fff8e9, #fffdf8);
+}
+
+.etiqueta {
+    display: inline-block;
+    background: #fff0d0;
+    color: #a94d0b;
+    padding: 8px 13px;
+    border-radius: 30px;
+    font-size: 0.78rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.descripcion {
+    color: #74685c;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 22px 0;
+}
+
+.tarjeta {
+    background: white;
+    border: 1px solid #f1e5d5;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 12px 35px #68431910;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px #6843191b;
+}
+
+.imagen-principal {
+    padding: 12px;
+    transform: rotate(1deg);
+}
+
+.imagen-principal img {
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 17px;
+}
+
+.marcador-imagen {
+    min-height: 180px;
+    background: repeating-linear-gradient(
+        135deg,
+        #fff5df,
+        #fff5df 14px,
+        #ffedc5 14px,
+        #ffedc5 28px
+    );
+    color: #9a651e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.marcador-imagen i {
+    font-size: 2.5rem;
+}
+
+.marcador-imagen p {
+    margin: 8px 0 0;
+}
+
+.imagen-principal .marcador-imagen {
+    min-height: 370px;
+    border-radius: 17px;
+}
+
+.franja {
+    background: #30271f;
+    color: white;
+    padding: 25px 0;
+}
+
+.franja i {
+    color: var(--amarillo);
+    font-size: 1.8rem;
+}
+
+.franja h5 {
+    margin: 8px 0 4px;
+    font-weight: bold;
+}
+
+.franja p {
+    color: #e5d7c6;
+    margin: 0;
+}
+
+.seccion {
+    padding: 80px 0;
+}
+
+.titulo-seccion {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 42px;
+}
+
+.titulo-seccion p {
+    color: #766b60;
+    line-height: 1.7;
+}
+
+.zona-imagen {
+    height: 190px;
+    position: relative;
+    overflow: hidden;
+    background: #fff0d0;
+}
+
+.zona-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.zona-imagen .marcador-imagen {
+    position: absolute;
+    inset: 0;
+}
+
+.contenido-card {
+    padding: 24px;
+}
+
+.numero {
+    color: var(--naranja-oscuro);
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.contenido-card h3 {
+    font-size: 1.2rem;
+    margin: 12px 0;
+    min-height: 48px;
+}
+
+.contenido-card p {
+    color: #74685c;
+    line-height: 1.7;
+    min-height: 100px;
+}
+
+.reglamento {
+    background: linear-gradient(135deg, #fff6e2, #fffdf8);
+}
+
+.accordion-item {
+    border: 1px solid #f0dfc7;
+    border-radius: 12px !important;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.accordion-button {
+    background: white;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.accordion-button:not(.collapsed) {
+    background: #fff0d0;
+    color: #99440a;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 3px #f4772120;
+}
+
+.accordion-body {
+    line-height: 1.8;
+    color: #6f6255;
+}
+
+.modal-vial {
+    border: none;
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.modal-vial .modal-header {
+    background: #fff0d0;
+}
+
+.modal-vial h6 {
+    color: var(--naranja-oscuro);
+    font-weight: bold;
+}
+
+.modal-vial p {
+    line-height: 1.7;
+    color: #6f6255;
+}
+
+.test-seccion {
+    background: radial-gradient(circle at 10% 20%, #fff0c6, transparent 30%),
+                #fffaf1;
+}
+
+.cuestionario {
+    max-width: 780px;
+    margin: auto;
+    padding: 35px;
+}
+
+.progress {
+    height: 9px;
+    background: #f4e6d0;
+    border-radius: 20px;
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, var(--naranja), #ffc53e);
+}
+
+.opcion {
+    display: block;
+    background: #fffaf1;
+    border: 1px solid #eee0cc;
+    border-radius: 13px;
+    padding: 14px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.opcion:hover, .opcion.seleccionada {
+    background: #fff0db;
+    border-color: var(--naranja);
+}
+
+.opcion input {
+    margin-right: 10px;
+    accent-color: var(--naranja);
+}
+
+#resultado {
+    line-height: 1.7;
+    font-weight: bold;
+}
+
+.pie {
+    background: #30271f;
+    color: white;
+    padding: 35px 0;
+}
+
+.pie p {
+    color: #e5d7c6;
+    margin-top: 10px;
+}
+
+.pie a {
+    color: var(--amarillo);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    .portada {
+        padding: 55px 0;
+    }
+
+    .seccion {
+        padding: 60px 0;
+    }
+
+    .imagen-principal img,
+    .imagen-principal .marcador-imagen {
+        height: 270px;
+        min-height: 270px;
+    }
+
+    .cuestionario {
+        padding: 22px;
+    }
+
+    .contenido-card p,
+    .contenido-card h3 {
+        min-height: 0;
+    }
+}
